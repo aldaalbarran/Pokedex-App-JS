@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+    --color__red: #ed5564;
+    --color__black: #434a54;
+    --color__white: #e6e9ed;
+    --bg__pokeball: linear-gradient(0deg, var(--color__white) 0%, var(--color__white) 45%, var(--color__black) 45%, var(--color__black) 55%, var(--color__red) 55%, var(--color__red) 100%);
+
+    --txt__title: "Oswald";
+    --txt__text: "Poppins";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--txt__text);
+}
+
+body{
+    background: var(--color__white);
+}
+
+
+.centerXY{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokedex{
+    margin: auto;
+    width: 500px;
+}
+
+.pokedex__search{
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    background: var(--color__red);
+}
+
+.pokedex__img{
+    position: relative;
+    height: 300px;
+    background: var(--bg__pokeball);
+}
+
+.pokedex__img .img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background: var(--color__white);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 25px  solid var(--color__black);
+}
+
+.pokedex__img .img img{
+    width: 50%;
+}
+
+.pokedex__info{
+    text-align: center;
+    background: var(--color__white);
+}
+
+.pokedex__info .row{
+    width: 100% !important;
+    margin: auto;
+}
+
+.pokedex__info .pokemon__name{
+    margin-left: 10px;
+    font-family: var(--txt__title);
+    font-size: 2.5rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.pokedex__info .pokemon__id{
+    font-family: var(--txt__title);
+    font-size: 1.75rem;
+}
+
+.pokedex__info .pokedex__type{
+    margin-top: 20px;
+}
+
+.pokedex__info .btn__type{
+    width: 70%;
+}
+
+.pokedex__info .pokedex__power{  
+    margin-top: 30px;
+}
+
+.pokedex__info .pokedex__power > div > div:nth-child(odd){
+    margin-top: 10px;
+    text-align: left;
+}
+
+.pokedex__info .pokedex__power > div > div:nth-child(odd) label{
+    margin-left: 10px;
+}
+
+.pokedex__info .pokedex__power > div > div:nth-child(even){
+    margin-top: 10px;
+    text-align: right;
+}
+
+.pokedex__info .pokedex__power > div > div:nth-child(even) label{
+    margin-right: 10px;
+}
+
+@media (max-width:992px){
+    .pokedex{
+        width: 100%;
+    }
+
+    .pokedex__search{
+        padding: 10px;
+    }
+}
+
