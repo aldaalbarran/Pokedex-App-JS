@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div id="app" class="app">
+    <form action="" id="app" class="app" onsubmit="searchPokemon(event)">
         <div id="pokedex" class="pokedex">
             
             <div id="pokedex-search" class="pokedex__search row">
                 <div class="col-9">
-                    <input type="search" id="btn-search" class="btn-search form-control">
+                    <input type="search" id="txt-search" class="txt-search form-control">
                 </div>
                 <div class="col-3">
-                    <button id="btn-search" class="btn-search btn btn-primary form-control"><i class="uil uil-search"></i></button>
+                    <button id="btn-search" class="btn-search btn btn-primary form-control"><i class="fas fa-search"></i></button>
                 </div>
             </div>
 
             <div id="pokedex-img" class="pokedex__img">
                 <div id="img" class="img centerXY">
-                    <img src="./img/Charmander.png" alt="">
+                    <img src="./img/Charmander.png" id="imgPokemon" alt="pokemon">
                 </div>
             </div>
 
@@ -91,7 +91,7 @@
             </div>
 
         </div>
-    </div>
+    </form>
 
     <script src="./js/app.js"></script>
 </body>
