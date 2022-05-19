@@ -68,7 +68,7 @@ body{
 }
 
 .pokedex__img .img img{
-    width: 85% !important;
+    width: 80% !important;
 }
 
 .pokedex__info{
@@ -84,7 +84,7 @@ body{
 .pokedex__info .pokemon__name{
     margin-left: 10px;
     font-family: var(--txt__title);
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: left;
     text-transform: uppercase;
 }
@@ -94,12 +94,17 @@ body{
     font-size: 1.75rem;
 }
 
-.pokedex__info .pokedex__type{
-    margin-top: 20px;
-}
-
-.pokedex__info .btn__type{
+.pokedex__info .pokedex__type div{
     width: 70%;
+    padding: 10px;
+    margin: 10px auto;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .pokedex__info .pokedex__power{  
