@@ -68,7 +68,7 @@ body{
 }
 
 .pokedex__img .img img{
-    width: 50%;
+    width: 85% !important;
 }
 
 .pokedex__info{
