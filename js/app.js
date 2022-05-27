@@ -41,7 +41,7 @@ window.onload = function () {
 
 const searchPokemon = event => {
     event.preventDefault()
-    fetch(`https://pokeapi.co/api/v2/pokemon/${txtSearch.value}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${txtSearch.value.toLowerCase().replace(/^(0+)/g, '')}`)
         .then(data => data.json())
         .then(response => dataPokemon(response))
         .catch(err => notFound())
